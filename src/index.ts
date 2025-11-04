@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 8000;
 app.get("/api/v1/sysinfo", async (_req: Request, res: Response) => {
   try {
     const info = await getSystemInformation();
-    res.status(200).json(info);
+    res.status(200).json({
+  ...info,
+  test: "hello world",
+});
   } catch (err) {
     console.error("Error while fetching system info:", err);
     res.status(500).json({ error: "unable to read system information" });
