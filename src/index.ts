@@ -9,7 +9,7 @@ app.get("/api/v1/sysinfo", async (_req: Request, res: Response) => {
     const info = await getSystemInformation();
     res.status(200).json({
   ...info,
-  test: "hello world",
+  test: "hello world2",
 });
   } catch (err) {
     console.error("Error while fetching system info:", err);
