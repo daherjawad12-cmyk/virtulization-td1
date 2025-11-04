@@ -67,5 +67,5 @@ jobs:
 
       - name: Verify pushed images
         run: |
-          docker buildx imagetools inspect ghcr.io/${{ env.OWNER }}/cloudproject:latest
-          docker buildx imagetools inspect docker.io/${{ secrets.DOCKERHUB_USERNAME }}/cloudproject:latest
+          docker buildx imagetools inspect ghcr.io/${{ env.OWNER }}/virtulization-td1:latest
+          docker buildx imagetools inspect docker.io/${{ secrets.DOCKERHUB_USERNAME }}/virtulization-td1:latest
