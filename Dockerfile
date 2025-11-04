@@ -25,7 +25,7 @@
 
 # # Droits non-root
 # USER node
-#hjhdhhjfjhhh
+#hjhdhhjfjh
 # # Exposer le port interne de l'app (dans ton code c'est 8000)
 # EXPOSE 8000
 
